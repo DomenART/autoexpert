@@ -1,0 +1,18 @@
+.content {
+    letter-spacing: 0.3px;
+    ul {
+        list-style: none;
+        li {
+            position: relative;
+            &::before {
+                content: '';
+                width: 8px;
+                height: 3px;
+                background-color: #9ba5af;
+                position: absolute;
+                top: 14px;
+                left: -15px;
+            }
+        }
+    }
+}

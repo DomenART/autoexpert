@@ -1,0 +1,133 @@
+.header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 4;  
+    &_homepage {
+        position: absolute;
+        background-color: transparent;
+        .header__logo {
+            display: none;
+        }
+    }
+    &_innerpage {
+        position: static;
+        background-color: #fff;
+        .header__logo {
+            display: block;
+        }
+        .menu-btn__line {
+            background-color: #11235a;
+        }
+        .header__phone {
+            color: #11235a;
+            &:hover {
+                color: #172e71;
+            }
+        }
+    }
+    &_opened-menu {
+        .header__top {
+            background-color: #172e71;
+        }
+        .header__bottom {
+            display: block;
+        }
+        .header__logo {
+            display: none;
+        }
+        .header__phone {
+            color: #fff;
+            &:hover {
+                color: #fff;
+            }
+        }
+        .menu-btn__line {
+            background-color: #fff;
+        }
+    }
+}
+
+.header__top {
+    position: relative;
+    z-index: 5;
+}
+
+.header__logo-img {
+    width: 93px;
+    height: 60px;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.header__rightside {
+    display: flex;
+    align-items: center;
+}
+
+.header__bottom {
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 4;
+    background-color: #11235a;
+    animation: slide-top ease-out 0.25s forwards;
+}
+
+.header__menu {
+    width: 100%;
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        li {
+            margin-right: 40px;
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+        a {
+            display: block;
+            padding: 32px 0;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: 0.34px;
+        }
+        @media screen and (max-width: @breakpoint-small) {
+            justify-content: flex-start;
+            a {
+                padding: 20px 0;
+            }
+        }
+    }
+   
+}
+
+.header__phone {
+    margin-right: 58px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 0.34px;
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+    @media screen and (max-width: @breakpoint-small) {
+        margin-right: 15px;
+        font-size: 16px;
+    }
+}

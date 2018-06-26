@@ -1,0 +1,63 @@
+@import "../../node_modules/uikit/src/less/uikit.theme.less";
+
+@container-max-width: 1180px;
+@container-large-max-width: 1620px;
+
+@global-font-family: "PT Sans", sans-serif;
+@global-font-size: 16px;
+@global-color: #091129;
+@global-line-height: 1.875;
+
+@global-control-height: 50px;
+@form-placeholder-color: #11235a;
+
+.hook-base-h1() {
+    margin: 0;
+}
+
+.hook-base-h2() {
+    margin: 0;
+}
+
+.hook-base-h3() {
+    margin: 0;
+}
+
+.hook-breadcrumb-divider() {
+    content: '→';    
+    margin: 0 10px;
+    color: #11235a;
+}
+
+.hook-lightbox() {
+    background: rgba(0,0,0,0.7);
+}
+
+.hook-form() {
+    padding: 0 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #e9e9e9;
+    box-shadow: none;
+    // background: url('../../node_modules/uikit/src/images/icons/check.svg') 90% 50% no-repeat;
+    // background-size: 16px 16px;
+}
+
+.hook-form-focus() {
+    border: 1px solid #00709e;
+}
+
+.hook-form-success() {
+    border: 1px solid #518413;
+}
+
+.hook-form-danger() {
+    border: 1px solid #df0024;
+    background-color: #df0024;
+}
+
+.uk-textarea {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 135px;
+    line-height: 1.6;
+}

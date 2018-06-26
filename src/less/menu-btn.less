@@ -1,0 +1,40 @@
+.menu-btn {
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    &_opened-menu {
+        .menu-btn__line_first {
+            transform: translate(0px,11px) rotate(-40deg);
+            transition: transform 0.25s; 
+        }
+        .menu-btn__line_second {
+            opacity: 0;
+            transition: opacity 0.1s; 
+        }
+        .menu-btn__line_third {
+            transform: translate(0px,-14px) rotate(45deg);
+            transition: transform 0.25s; 
+        }
+    }
+}
+
+.menu-btn__line {
+    width: 45px;
+    height: 5px;
+    background-color: #fff;
+    position: relative;
+    &_first {
+        margin-bottom: 8px;
+        transition: transform 0.25s; 
+    }
+    &_second {
+        margin-bottom: 8px;
+        transition: transform 0.25s; 
+    }
+    &_third {
+        transition: transform 0.25s; 
+    }
+}
