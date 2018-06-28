@@ -232,7 +232,7 @@ eval("module.exports = __webpack_require__.p + \"fonts/PTSans-Regular.woff?db796
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./Big Buck Bunny.mp4\": \"./src/img/Big Buck Bunny.mp4\",\n\t\"./about-header.jpg\": \"./src/img/about-header.jpg\",\n\t\"./bg-about.jpg\": \"./src/img/bg-about.jpg\",\n\t\"./bg-contacts.jpg\": \"./src/img/bg-contacts.jpg\",\n\t\"./bg-reviews.jpg\": \"./src/img/bg-reviews.jpg\",\n\t\"./dev-logo.png\": \"./src/img/dev-logo.png\",\n\t\"./document.jpg\": \"./src/img/document.jpg\",\n\t\"./grid.png\": \"./src/img/grid.png\",\n\t\"./light.png\": \"./src/img/light.png\",\n\t\"./logo.png\": \"./src/img/logo.png\",\n\t\"./photo.jpg\": \"./src/img/photo.jpg\",\n\t\"./service-pic.jpg\": \"./src/img/service-pic.jpg\",\n\t\"./shadow.png\": \"./src/img/shadow.png\",\n\t\"./slide.jpg\": \"./src/img/slide.jpg\",\n\t\"./slide2.jpg\": \"./src/img/slide2.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\tvar module = __webpack_require__(id);\n\treturn module;\n}\nfunction webpackContextResolve(req) {\n\tvar id = map[req];\n\tif(!(id + 1)) { // check for number or string\n\t\tvar e = new Error('Cannot find module \"' + req + '\".');\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn id;\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/img sync recursive ^\\\\.\\\\/.*$\";\n\n//# sourceURL=webpack:///./src/img_sync_^\\.\\/.*$?");
+eval("var map = {\n\t\"./Big Buck Bunny.mp4\": \"./src/img/Big Buck Bunny.mp4\",\n\t\"./about-header.jpg\": \"./src/img/about-header.jpg\",\n\t\"./bg-about.jpg\": \"./src/img/bg-about.jpg\",\n\t\"./bg-contacts.jpg\": \"./src/img/bg-contacts.jpg\",\n\t\"./bg-reviews.jpg\": \"./src/img/bg-reviews.jpg\",\n\t\"./check.svg\": \"./src/img/check.svg\",\n\t\"./danger.svg\": \"./src/img/danger.svg\",\n\t\"./dev-logo.png\": \"./src/img/dev-logo.png\",\n\t\"./document.jpg\": \"./src/img/document.jpg\",\n\t\"./grid.png\": \"./src/img/grid.png\",\n\t\"./light.png\": \"./src/img/light.png\",\n\t\"./logo.png\": \"./src/img/logo.png\",\n\t\"./photo.jpg\": \"./src/img/photo.jpg\",\n\t\"./service-pic.jpg\": \"./src/img/service-pic.jpg\",\n\t\"./shadow.png\": \"./src/img/shadow.png\",\n\t\"./slide.jpg\": \"./src/img/slide.jpg\",\n\t\"./slide2.jpg\": \"./src/img/slide2.jpg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\tvar module = __webpack_require__(id);\n\treturn module;\n}\nfunction webpackContextResolve(req) {\n\tvar id = map[req];\n\tif(!(id + 1)) { // check for number or string\n\t\tvar e = new Error('Cannot find module \"' + req + '\".');\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn id;\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/img sync recursive ^\\\\.\\\\/.*$\";\n\n//# sourceURL=webpack:///./src/img_sync_^\\.\\/.*$?");
 
 /***/ }),
 
@@ -265,7 +265,7 @@ eval("module.exports = __webpack_require__.p + \"img/about-header.jpg?988fa47098
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"img/bg-about.jpg?db6608f5a935fe5a1eb5f2374d73f11d\";\n\n//# sourceURL=webpack:///./src/img/bg-about.jpg?");
+eval("module.exports = __webpack_require__.p + \"img/bg-about.jpg?5b73b462c17ae18e09e23be5e69023f9\";\n\n//# sourceURL=webpack:///./src/img/bg-about.jpg?");
 
 /***/ }),
 
@@ -288,6 +288,28 @@ eval("module.exports = __webpack_require__.p + \"img/bg-contacts.jpg?0c41390c874
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("module.exports = __webpack_require__.p + \"img/bg-reviews.jpg?801dae75b43af0c9a9c930508d300adf\";\n\n//# sourceURL=webpack:///./src/img/bg-reviews.jpg?");
+
+/***/ }),
+
+/***/ "./src/img/check.svg":
+/*!***************************!*\
+  !*** ./src/img/check.svg ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"img/check.svg?e42459efc4a3d0af3e82635413b5e264\";\n\n//# sourceURL=webpack:///./src/img/check.svg?");
+
+/***/ }),
+
+/***/ "./src/img/danger.svg":
+/*!****************************!*\
+  !*** ./src/img/danger.svg ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"img/danger.svg?004ab839f99c50537a3c42cca017663b\";\n\n//# sourceURL=webpack:///./src/img/danger.svg?");
 
 /***/ }),
 
@@ -424,6 +446,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _les
 
 /***/ }),
 
+/***/ "./src/js/form.js":
+/*!************************!*\
+  !*** ./src/js/form.js ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// import FormValidator from 'validate-js';\n\n(function () {\n\n    let form = document.querySelector('.contacts-form');\n\n    if (form) {\n\n        let inputs = form.querySelectorAll('input, textarea');\n        let submit = form.querySelector('button[type=submit]');\n\n        form.addEventListener('submit', event => event.preventDefault());\n        inputs.forEach(element => {\n            element.addEventListener('change', () => {\n                checkValidity(element);\n            });\n        });\n        submit.addEventListener('click', formHandler);\n\n        function checkValidity(element) {\n            if (!element.checkValidity()) {\n                element.focus();\n                createErrorBox(element);\n                element.addEventListener('focusout', () => removeErrorBox(element));\n            }\n            element.classList.add('isValidating');\n        }\n\n        function createErrorBox(element) {\n            let errorBox = document.createElement('div');\n            element.parentNode.appendChild(errorBox);\n            errorBox.classList.add('error-box');\n            errorBox.textContent = element.getAttribute('title');\n        }\n\n        function removeErrorBox(element) {\n            if (element.parentNode.querySelector('.error-box')) {\n                element.parentNode.removeChild(element.parentNode.querySelector('.error-box'));\n            }\n        }\n\n        function formHandler() {\n            if (form.checkValidity()) {\n                form.submit();\n            } else {\n                inputs.forEach(element => {\n                    checkValidity(element);\n                });\n            }\n        }\n    }\n})();\n\n// let inputs = form.querySelectorAll('input, textarea');\n\n//# sourceURL=webpack:///./src/js/form.js?");
+
+/***/ }),
+
 /***/ "./src/js/main.js":
 /*!************************!*\
   !*** ./src/js/main.js ***!
@@ -432,7 +465,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _les
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _uikit_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./uikit.js */ \"./src/js/uikit.js\");\n/* harmony import */ var _slider_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./slider.js */ \"./src/js/slider.js\");\n/* harmony import */ var _slider_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_slider_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _menu_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu.js */ \"./src/js/menu.js\");\n/* harmony import */ var _menu_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_menu_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _slider_video_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./slider-video.js */ \"./src/js/slider-video.js\");\n/* harmony import */ var _slider_video_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_slider_video_js__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\n\n//# sourceURL=webpack:///./src/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _uikit_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./uikit.js */ \"./src/js/uikit.js\");\n/* harmony import */ var _slider_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./slider.js */ \"./src/js/slider.js\");\n/* harmony import */ var _slider_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_slider_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _menu_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu.js */ \"./src/js/menu.js\");\n/* harmony import */ var _menu_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_menu_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _map_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./map.js */ \"./src/js/map.js\");\n/* harmony import */ var _map_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_map_js__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _form_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./form.js */ \"./src/js/form.js\");\n/* harmony import */ var _form_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_form_js__WEBPACK_IMPORTED_MODULE_4__);\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/js/main.js?");
+
+/***/ }),
+
+/***/ "./src/js/map.js":
+/*!***********************!*\
+  !*** ./src/js/map.js ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval(";(function () {\n\n    if (document.querySelector('.contacts-map')) {\n        ymaps.ready(init);\n\n        function init() {\n            var myMap = new ymaps.Map(\"map\", {\n                center: [51.652766, 39.150388],\n                zoom: 17\n            });\n            var myPlacemark = new ymaps.Placemark([51.652766, 39.150388], {\n                hintContent: 'улица Домостроителей, 17',\n                balloonContent: 'улица Домостроителей, 17'\n            });\n            myMap.geoObjects.add(myPlacemark);\n\n            document.querySelector('.js-map-preloader').hidden = 'true';\n        }\n    }\n})();\n\n//# sourceURL=webpack:///./src/js/map.js?");
 
 /***/ }),
 
@@ -444,17 +488,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _uik
 /***/ (function(module, exports) {
 
 eval(";(function () {\n\n    let menuBtn = document.querySelector('.menu-btn');\n    let header = document.querySelector('.header');\n\n    menuBtn.addEventListener('click', () => {\n        menuBtn.classList.toggle('menu-btn_opened-menu');\n        header.classList.toggle('header_opened-menu');\n    });\n})();\n\n//# sourceURL=webpack:///./src/js/menu.js?");
-
-/***/ }),
-
-/***/ "./src/js/slider-video.js":
-/*!********************************!*\
-  !*** ./src/js/slider-video.js ***!
-  \********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval(";(function () {\n\n    if (document.querySelector('.home-slider')) {\n\n        slider.querySelectorAll('.js-video-container').forEach(element => {});\n    }\n})();\n\n//# sourceURL=webpack:///./src/js/slider-video.js?");
 
 /***/ }),
 

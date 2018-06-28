@@ -33,8 +33,8 @@
                                     </svg>
                             </div>
                             <div class="contacts-info__text contacts-info__text_tel">
-                                <a href="tel: 8-473 2-515-300">
-                                    8-473 2-515-300
+                                <a href="tel: <?php echo strip_tags(get_field('contacts_tel')); ?>">
+                                <?php the_field('contacts_tel'); ?>
                                 </a>
                             </div>
                         </div>
@@ -56,8 +56,8 @@
                                 </svg>
                             </div>
                             <div class="contacts-info__text">
-                                <a href="tel: mail@mail.ru">
-                                    mail@mail.ru
+                                <a href="tel: <?php the_field('contacts_email'); ?>">
+                                <?php the_field('contacts_email'); ?>
                                 </a>
                             </div>
                         </div>
@@ -68,12 +68,12 @@
                                  </svg>   
                             </div>
                             <div class="contacts-info__text">
-                                394038 г. Воронеж ул. Домостроителей дом 17
+                            <?php the_field('contacts_address'); ?>
                             </div>
                         </div>
                     </div>
                     <div class="contacts-map">
-                        <div class="contacts-map__preloader">
+                        <div class="contacts-map__preloader js-map-preloader">
                             <div class="contacts-map__preloader-text">Подождите, карта загружается...</div>
                             <div>
                                 <svg class="contacts-map__preloader-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="30px" height="30px" viewBox="0 0 29.124 29.123" style="enable-background:new 0 0 29.124 29.123;" xml:space="preserve">
@@ -84,23 +84,24 @@
                                 </svg>
                             </div>
                         </div>
-                         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A98c0acafad64e32e70f4aa9b6cf8284eae194fbda9fbf2837e4a0ec7d3236eed&amp;width=560&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script> 
+                        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+                        <div class="contacts-map__body" id="map"></div>
                     </div>
                 </div>
                 <div>
-                    <form class="contacts-form">
+                    <form class="contacts-form" name="feedback" novalidate>
                         <div class="contacts-form__title">Обратная связь</div>
                         <div class="contacts-form__row">
-                            <input class="uk-input" type="text" name="name" title="Пожалуйста, заполните это поле" placeholder="Имя:">
+                            <input class="uk-input" type="text" name="name" title="Пожалуйста, напишите своё имя" placeholder="Имя:">
                         </div>
                         <div class="contacts-form__row">
-                            <input class="uk-input" type="email" name="email" placeholder="E-mail*:" title="Пожалуйста, заполните это поле" required>
+                            <input class="uk-input" type="email" name="email" placeholder="E-mail*:" title="Пожалуйста, заполните это поле в формате mail@domain.ru"  required>
                         </div>
                         <div class="contacts-form__row">
-                            <input class="uk-input" type="tel" name="tel" title="Пожалуйста, заполните это поле" placeholder="Телефон">
+                            <input class="uk-input" type="tel" name="tel" title="Пожалуйста, заполните это поле в формате xxx" pattern="^[0-9]{3}$" placeholder="Телефон:">
                         </div>
                         <div class="contacts-form__row">
-                            <textarea class="uk-textarea" name="message" title="Пожалуйста, заполните это поле" placeholder="Сообщение*:" required></textarea>
+                            <textarea class="uk-textarea" name="message" title="Пожалуйста, напишите своё сообщение" placeholder="Сообщение*:" required></textarea>
                         </div>
                         <button class="contacts-form__submit" type="submit">Отправить</button>
                         <div class="contacts-form__tip">

@@ -40,7 +40,7 @@
 						(wp_check_filetype($slide['home_slider-item'])['ext'] == 'webm')):
 					?>
 						<li class="uk-cover-container js-video-container">
-							<video autoplay loop muted data-uk-cover src="<?php echo $slide['home_slider-item']; ?>">
+							<video autoplay loop muted data-uk-cover uk-video="autoplay: inview" src="<?php echo $slide['home_slider-item']; ?>">
 							</video>
 						</li>
 					<?php endif; ?>

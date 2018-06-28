@@ -1,0 +1,27 @@
+.error-box {
+    position: absolute;
+    top: ~'calc(100% + 12px)';
+    left: 0;
+    z-index: 2;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.17);
+    border: 1px solid #df0024;
+    background-color: #efd8dc;
+    padding: 15px 20px;
+    color: #df0024;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.27px;
+    &::before {
+        content: '';
+        width: 15px;
+        height: 15px;
+        background-color: #efd8dc;
+        border-left: 1px solid #df0024;
+        border-top: 1px solid #df0024;
+        position: absolute;
+        top: -9px;
+        left: 30px;
+        transform: rotate(45deg);
+    }
+}
