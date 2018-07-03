@@ -11,7 +11,7 @@ import IMask from 'imask';
 		};
 		let telMask = new IMask(telInput, maskOptions);
 		telInput.addEventListener('focus', () => {
-			
+			// telMask.value = `+7 + ${telInput.value}`;
 		});
 	}
 })();
