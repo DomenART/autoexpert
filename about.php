@@ -4,6 +4,7 @@
 <?php get_header(); ?>
 <body class="page">
     <?php get_template_part('_header_innerpage'); ?>
+    <?php the_post(); ?>
     <main class="about innerpage">
         <header class="about__innerpage-header innerpage-header">
             <div class="innerpage-header__decor"></div>
@@ -12,25 +13,19 @@
         <div class="breadcrumbs">
             <div class="uk-container">
                 <ul class="uk-breadcrumb">
-                    <li><a href="">Главная</a></li>
-                    <li><span>О компании</span></li>
+                <?php if(function_exists('bcn_display')) bcn_display();?>
                 </ul>
             </div>
         </div>
         <section class="about__section">
             <div class="uk-container">
                 <h1 class="about__page-title page-title">
-                    О компании (h1)
+                   <?php the_title(); ?>
                 </h1>
                 <div class="content">
-                    <p>
-                        Краткая информация о компании. Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. 
-                    </p>
-                    <ul>
-                        <li>Lorem ipsum решила выйти в большой мир грамматики.</li>
-                        <li>Lorem ipsum решила выйти в большой мир грамматики.</li>
-                        <li>Lorem ipsum решила выйти в большой мир грамматики.</li>
-                    </ul>
+                
+                <?php the_content(); ?>
+                   
                 </div>
             </div>
         </section>

@@ -1518,6 +1518,7 @@ button.uk-icon:not(:disabled) {
 .uk-form-danger:focus:required:focus {
   color: inherit;
   border: 1px solid #00709e;
+  background: none;
 }
 .uk-form-danger:required:focus::-webkit-input-placeholder,
 .uk-form-danger:focus:required:focus::-webkit-input-placeholder {
@@ -12387,6 +12388,7 @@ iframe.uk-cover {
 .isValidating:invalid:required:focus {
   color: inherit;
   border: 1px solid #00709e;
+  background: none;
 }
 .isValidating:invalid:required:focus::-webkit-input-placeholder {
   color: inherit;
@@ -12709,24 +12711,6 @@ iframe.uk-cover {
   .footer__sitemap {
     margin-bottom: 20px;
   }
-}
-.footer__dev {
-  display: flex;
-  align-items: center;
-}
-.footer__dev:hover .footer__dev-text {
-  opacity: 1;
-  color: #fff;
-}
-.footer__dev-text {
-  margin-right: 20px;
-  opacity: 0.4;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 60px;
-  text-decoration: underline;
-  letter-spacing: 0.3px;
 }
 .page {
   overflow-x: hidden;
@@ -13321,7 +13305,6 @@ iframe.uk-cover {
 .reviews-item__photo {
   width: 100px;
   height: 100px;
-  display: block;
   margin-right: 30px;
 }
 .reviews-item__title {
@@ -13379,4 +13362,32 @@ iframe.uk-cover {
   left: 30px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+.footer-dev {
+  display: flex;
+  align-items: center;
+}
+.footer-dev:hover .footer-dev__text {
+  opacity: 1;
+  color: #fff;
+}
+.footer-dev:hover .footer-dev__logo {
+  opacity: 1;
+  fill: #fff;
+}
+.footer-dev__text {
+  margin-right: 20px;
+  opacity: 0.4;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 60px;
+  text-decoration: underline;
+  letter-spacing: 0.3px;
+}
+.footer-dev__logo {
+  width: 50px;
+  height: 35px;
+  opacity: 0.4;
+  fill: #fefefe;
 }

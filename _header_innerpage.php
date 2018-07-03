@@ -4,13 +4,13 @@
         <div class="uk-container uk-container-large">
             <div class="header__inner">
                 <div class="header__leftside">
-                    <a class="header__logo" href="#">
-                        <img class="header__logo-img" src="img/logo.png" alt="">
+                    <a class="header__logo" href="<?php echo get_home_url(); ?>">
+                        <img class="header__logo-img" src="<?php echo get_template_directory_uri(); ?>/dist/img/logo.png" alt="">
                     </a>
                 </div>
                 <div class="header__rightside">
-                    <a class="header__phone" href="tel: <?php echo strip_tags(get_field('contacts_tel')); ?>" target="_blank">
-                        <?php the_field('contacts_tel'); ?>
+                    <a class="header__phone" href="tel: <?php echo strip_tags(get_field('contacts_tel'), 54); ?>" target="_blank">
+                        <?php the_field('contacts_tel', 54); ?>
                     </a>
                     <button class="menu-btn" type="button">
                         <div class="menu-btn__line menu-btn__line_first"></div>

@@ -57,9 +57,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    & > * {
-        //padding: 15px 0 20px;
-    }
     @media screen and (max-width: @breakpoint-medium) {
         flex-direction: column;
     }
@@ -140,27 +137,4 @@
     @media screen and (max-width: @breakpoint-medium) {
         margin-bottom: 20px;
     }
-}
-
-.footer__dev {
-    display: flex;
-    align-items: center;
-    &:hover {
-        .footer__dev-text {
-            opacity: 1;
-            color: #fff;
-        }
-    }
-}
-
-.footer__dev-text {
-    margin-right: 20px;
-    opacity: 0.4;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 60px;
-    text-decoration: underline;
-    letter-spacing: 0.3px;
-    
 }

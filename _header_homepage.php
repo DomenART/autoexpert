@@ -5,7 +5,9 @@
             <div class="header__inner">
                 <div class="header__leftside"></div>
                 <div class="header__rightside">
-                    <a class="header__phone" href="tel: 8-473 2-515-300">8-473 2-515-300</a>
+                    <a class="header__phone" href="tel: <?php echo strip_tags(get_field('contacts_tel'), 54); ?>" target="_blank">
+                        <?php the_field('contacts_tel', 54); ?>
+                    </a>
                     <button class="menu-btn" type="button">
                         <div class="menu-btn__line menu-btn__line_first"></div>
                         <div class="menu-btn__line menu-btn__line_second"></div>

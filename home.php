@@ -26,18 +26,13 @@
 			<?php if (get_field('home_slider')): ?>
 				<?php foreach(get_field('home_slider') as $key => $slide): ?>
 					<?php 
-					if (
-						(wp_check_filetype($slide['home_slider-item'])['ext'] == 'jpg') || 
-						(wp_check_filetype($slide['home_slider-item'])['ext'] == 'png')):
+					if ((in_array(wp_check_filetype($slide['home_slider-item'])['ext'], array('jpg', 'png', 'gif')))):
 					?>
 						<li class="uk-cover-container">
 							<img src="<?php echo $slide['home_slider-item']; ?>" data-uk-cover alt="">
 						</li>
 					<?php 
-					elseif (
-						(wp_check_filetype($slide['home_slider-item'])['ext'] == 'mp4') || 
-						(wp_check_filetype($slide['home_slider-item'])['ext'] == 'ogg') ||
-						(wp_check_filetype($slide['home_slider-item'])['ext'] == 'webm')):
+					elseif (in_array(wp_check_filetype($slide['home_slider-item'])['ext'], array('mp4','ogg','webm'))):
 					?>
 						<li class="uk-cover-container js-video-container">
 							<video autoplay loop muted data-uk-cover uk-video="autoplay: inview" src="<?php echo $slide['home_slider-item']; ?>">
