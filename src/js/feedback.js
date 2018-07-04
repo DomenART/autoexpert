@@ -15,18 +15,21 @@
 
 	function formHandler(event, form, inputs) {
 		event.preventDefault();
-		if (form.checkValidity())
+		if (form.checkValidity()) {
 			requestHandler(form)
-				.then(() => fillSuccessResult(form))
-				.catch(() => fillFailResult(form))
-				.then(() => resetResult(form, inputs));
-		else 
+				.then(fillSuccessResult)
+				.catch(fillFailResult)
+				.then(resetResult.bind(null, form, inputs));
+		}
+		else {
 			inputs.forEach(element => checkValidity(element));
+		}
 	}
 
 	function checkValidity(element) {
-		if (!element.checkValidity() && (element.value))
+		if (!element.checkValidity() && (element.value)) {
 			createErrorBox(element);
+		}
 		element.classList.add('isValidating');
 	}
 
@@ -36,12 +39,13 @@
 		errorBox.classList.add('error-box');
 		errorBox.textContent = element.getAttribute('title');
 		setTimeout(() => element.focus(), 0);
-		setTimeout( () => removeErrorBox(element), 3000);
+		setTimeout(() => removeErrorBox(element), 3000);
 	}
 
 	function removeErrorBox(element) {
-		if (element.parentNode.querySelector('.error-box'))
+		if (element.parentNode.querySelector('.error-box')) {
 			element.parentNode.removeChild(element.parentNode.querySelector('.error-box'));
+		}
 	}
 
 	function requestHandler(form) {
@@ -49,42 +53,31 @@
 		let request = new XMLHttpRequest();
 		request.open('POST','http://autoexpert.loc/wp-json/contact-form-7/v1/contact-forms/86/feedback');
 		request.send(formData);
-		let promise = new Promise(function(resolve, reject) {
+		form.classList.add('contacts-form_shown');
+		return new Promise(function(resolve, reject) {
 			request.addEventListener('loadend', () => {
-				if (request.status == 200) resolve();
-				else reject();			
+				if (request.status == 200) resolve(form);
+				else reject(form);			
 			});
 		});
-		return promise;
 	}
 
-	function renderRequestResult(form) {
-		let requestBox = document.createElement('div');
-		form.appendChild(requestBox);
-		requestBox.classList.add('request-result');
-		return requestBox;		
+	function fillSuccessResult() {
+		form.classList.add('contacts-form_success');
+		form.querySelector('.contacts-form__result-text').innerHTML = 'Сообщение успешно отправлено! <br/> Спасибо!';
+		return form;
 	}
 
-	function fillSuccessResult(form) {
-		let requestBoxText = document.createElement('div');
-		requestBoxText.classList.add('request-result__text_success');
-		requestBoxText.innerHTML = 'Сообщение успешно отправлено! <br/> Спасибо!';
-		renderRequestResult(form).appendChild(requestBoxText);
-		
-	}
-
-	function fillFailResult(form) {
-		renderRequestResult(form);
-		let requestBoxText = document.createElement('div');
-		requestBoxText.classList.add('request-result__text_error');
-		requestBoxText.innerHTML = 'Произошла ошибка!<br/>Сообщение не отправлено!<br/>Извините!';
-		renderRequestResult(form).appendChild(requestBoxText);
+	function fillFailResult() {
+		form.classList.add('contacts-form_fail');
+		form.querySelector('.contacts-form__result-text').innerHTML = 'Произошла ошибка!<br/>Сообщение не отправлено!<br/>Извините!';
+		return form;
 	}
 	
 	function resetResult(form, inputs) {
 		setTimeout(() => {
-			form.removeChild(form.querySelector('.request-result'));
-			form.reset();	
+			form.classList.remove('contacts-form_shown', 'contacts-form_success', 'contacts-form_fail');
+			form.reset();		
 			inputs.forEach(element => {
 				element.classList.remove('isValidating');
 			});

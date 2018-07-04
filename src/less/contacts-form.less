@@ -3,6 +3,29 @@
     border: 1px solid #e9e9e9;
     background-color: #f1f1f1;
     position: relative;
+    &_shown {
+        .contacts-form__result {
+            display: flex;
+        }
+    }
+    &_success {
+        .contacts-form__result-text {
+            display: block;
+            color: #518413;
+        }
+        .contacts-form__result-icon { 
+            display: none;
+        }
+    }
+    &_fail {
+        .contacts-form__result-text {
+            display: block;
+            color: #df0024;
+        }
+        .contacts-form__result-icon { 
+            display: none;
+        }
+    }
 }
 
 .contacts-form__title {
@@ -50,3 +73,27 @@
     letter-spacing: 0.23px;
 }
 
+.contacts-form__result {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    
+}
+
+.contacts-form__result-icon {
+    animation: rotate 1s linear infinite;
+}
+
+.contacts-form__result-text { 
+    display: none;
+}

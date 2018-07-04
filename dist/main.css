@@ -13248,6 +13248,23 @@ iframe.uk-cover {
   background-color: #f1f1f1;
   position: relative;
 }
+.contacts-form_shown .contacts-form__result {
+  display: flex;
+}
+.contacts-form_success .contacts-form__result-text {
+  display: block;
+  color: #518413;
+}
+.contacts-form_success .contacts-form__result-icon {
+  display: none;
+}
+.contacts-form_fail .contacts-form__result-text {
+  display: block;
+  color: #df0024;
+}
+.contacts-form_fail .contacts-form__result-icon {
+  display: none;
+}
 .contacts-form__title {
   text-align: center;
   margin-bottom: 20px;
@@ -13288,6 +13305,28 @@ iframe.uk-cover {
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0.23px;
+}
+.contacts-form__result {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+}
+.contacts-form__result-icon {
+  -webkit-animation: rotate 1s linear infinite;
+          animation: rotate 1s linear infinite;
+}
+.contacts-form__result-text {
+  display: none;
 }
 .reviews {
   padding-bottom: 5%;
@@ -13391,24 +13430,4 @@ iframe.uk-cover {
   height: 35px;
   opacity: 0.4;
   fill: #fefefe;
-}
-.request-result {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(255, 255, 255, 0.8);
-  font-size: 24px;
-  font-weight: 600;
-  text-align: center;
-}
-.request-result__text_success {
-  color: #518413;
-}
-.request-result__text_error {
-  color: #df0024;
 }
