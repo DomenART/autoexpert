@@ -13028,6 +13028,11 @@ iframe.uk-cover {
   line-height: 1;
   letter-spacing: 1.14px;
 }
+@media (max-width: 640px) {
+  .page-title {
+    font-size: 40px;
+  }
+}
 .section-title {
   color: #11235a;
   font-size: 48px;
@@ -13067,6 +13072,11 @@ iframe.uk-cover {
 .about__section {
   margin-bottom: 120px;
 }
+@media (max-width: 640px) {
+  .about__section {
+    margin-bottom: 80px;
+  }
+}
 .about__page-title {
   margin-bottom: 40px;
 }
@@ -13077,6 +13087,12 @@ iframe.uk-cover {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   grid-gap: 70px;
+}
+@media (max-width: 640px) {
+  .services-grid {
+    grid-template-columns: repeat(auto-fill, 240px);
+    justify-content: center;
+  }
 }
 .services-item {
   display: flex;
@@ -13114,8 +13130,14 @@ iframe.uk-cover {
 }
 .documents-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, 1fr);
   grid-gap: 70px;
+}
+@media (max-width: 640px) {
+  .documents-grid {
+    grid-template-columns: repeat(auto-fill, 240px);
+    justify-content: center;
+  }
 }
 .documents-item {
   display: flex;
@@ -13171,8 +13193,14 @@ iframe.uk-cover {
 .contacts__box {
   display: grid;
   grid-template-columns: 560px 468px;
-  grid-gap: 150px;
+  grid-column-gap: 150px;
+  grid-row-gap: 75px;
   padding-bottom: 70px;
+}
+@media (max-width: 1200px) {
+  .contacts__box > div {
+    grid-column: 1 / span 2;
+  }
 }
 .innerpage {
   background-color: #f9f9f9;
@@ -13243,6 +13271,8 @@ iframe.uk-cover {
   height: 300px;
 }
 .contacts-form {
+  max-width: 468px;
+  box-sizing: border-box;
   padding: 42px 64px;
   border: 1px solid #e9e9e9;
   background-color: #f1f1f1;

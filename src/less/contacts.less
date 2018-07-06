@@ -5,6 +5,12 @@
 .contacts__box {
     display: grid;
     grid-template-columns: 560px 468px;
-    grid-gap: 150px;
+    grid-column-gap:150px;
+    grid-row-gap: 75px;
     padding-bottom: 70px;
+    @media (max-width: @breakpoint-large) {
+        & > div {
+            grid-column: 1 / span 2;
+        }
+    }
 }

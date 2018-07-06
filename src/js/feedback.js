@@ -27,7 +27,7 @@
 	}
 
 	function checkValidity(element) {
-		if (!element.checkValidity() && (element.value)) {
+		if (!element.checkValidity()) {
 			createErrorBox(element);
 		}
 		element.classList.add('isValidating');
