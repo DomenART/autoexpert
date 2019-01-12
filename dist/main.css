@@ -13130,7 +13130,7 @@ iframe.uk-cover {
 }
 .documents-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   grid-gap: 70px;
 }
 @media (max-width: 640px) {
@@ -13189,6 +13189,9 @@ iframe.uk-cover {
 }
 .contacts__innerpage-header {
   background: url(img/bg-contacts.jpg?0c41390c874a927cab67354d07c4bca0) 50% 50% no-repeat;
+}
+.contacts__page-title {
+  margin-bottom: 40px;
 }
 .contacts__box {
   display: grid;
@@ -13364,7 +13367,7 @@ iframe.uk-cover {
 .reviews__innerpage-header {
   background: url(img/bg-reviews.jpg?801dae75b43af0c9a9c930508d300adf) 50% 50% no-repeat;
 }
-.reviews__section-title {
+.reviews__page-title {
   margin-bottom: 40px;
 }
 .reviews-item {

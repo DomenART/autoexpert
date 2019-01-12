@@ -5,16 +5,15 @@
 <body class="page">
 	<?php get_template_part('_header_homepage'); ?>	
 	<main class="home">
-		<div class="home-title">
+		<!--<div class="home-title">
 			<div class="home-title__decor"></div>
-			<img class="home-title__logo" src="<?php echo get_template_directory_uri(); ?>/dist/img/logo.png" alt="">
-			<h1 class="home-title__sitetitle">
+			<img class="home-title__logo" src="<?php echo get_template_directory_uri(); ?>/dist/img/logo.png" alt=""> 			<h1 class="home-title__sitetitle">
 				<?php the_field('home_title'); ?>
 			</h1>
 			<div class="home-title__desc">
 				<?php the_field('home_subtitle'); ?>
-			</div>  
-		</div>
+			</div>
+		</div>-->
 		<?php if (get_field('home_slider')): ?>
 		<ul class="home-slider-nav" data-uk-switcher>
 			<?php foreach(get_field('home_slider') as $key => $slide): ?>

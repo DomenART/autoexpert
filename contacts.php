@@ -5,12 +5,9 @@
 <body class="page">
     <?php get_template_part('_header_innerpage'); ?>    
     <main class="contacts innerpage">
-        <header class="contacts__innerpage-header innerpage-header">
-            <div class="uk-container uk-container-large">
-                <h1 class="innerpage-header__title">
-                    Контакты (h1)
-                </h1>
-            </div>
+        <header class="about__innerpage-header innerpage-header">
+            <div class="innerpage-header__decor"></div>
+			<img class="innerpage-header__logo" src="<?php echo get_template_directory_uri(); ?>/dist/img/logo.png" alt="">
         </header>
         <div class="breadcrumbs">
             <div class="uk-container">
@@ -23,6 +20,9 @@
             <div class="contacts__box">
                 <div>
                     <div class="contacts-info">
+                        <h1 class="contacts__page-title page-title">
+                            <?php the_title(); ?>
+                        </h1>
                         <div class="contacts-info__row">
                             <div class="contacts-info__icon">
                                 <svg width="19px" height="19px" viewBox="0 0 16.877 16.877">
