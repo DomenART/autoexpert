@@ -18,7 +18,7 @@
     "jedi-validate": "^1.5.2",
     "less": "^3.0.2",
     "less-loader": "^4.1.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "normalize.css": "^8.0.0",
     "postcss": "^6.0.21",
     "postcss-cssnext": "^3.1.0",
