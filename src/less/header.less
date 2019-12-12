@@ -10,6 +10,34 @@
         .header__logo {
             display: none;
         }
+        &::before {
+          content: '';
+        	background: url("../img/bg_ng_left.png") no-repeat;
+        	width: 297px;
+        	height: 506px;
+        	position: absolute;
+        	top: -69px;
+        	left: 0;
+        	z-index: 50;
+        	@media (max-width: 1850px) {
+        		left: auto;
+        		right: 90%;
+        	}
+        }
+        &::after {
+          content: '';
+        	background: url("../img/bg_ng_right.png") no-repeat;
+        	width: 529px;
+        	height: 506px;
+        	position: absolute;
+        	top: -69px;
+        	right: -100px;
+        	z-index: 50;
+        	@media (max-width: 1850px) {
+            right: auto;
+            left: 90%;
+        	}
+        }
     }
     &_innerpage {
         position: static;
@@ -25,6 +53,34 @@
             &:hover {
                 color: #172e71;
             }
+        }
+        &::before {
+          content: '';
+        	background: url("../img/bg_ng_left.png") no-repeat;
+        	width: 297px;
+        	height: 506px;
+        	position: absolute;
+        	top: 100%;
+        	left: 0;
+        	z-index: 50;
+        	@media (max-width: 1850px) {
+        		left: auto;
+        		right: 90%;
+        	}
+        }
+        &::after {
+          content: '';
+        	background: url("../img/bg_ng_right.png") no-repeat;
+        	width: 529px;
+        	height: 506px;
+        	position: absolute;
+        	top: 100%;
+        	right: -100px;
+        	z-index: 50;
+        	@media (max-width: 1850px) {
+            right: auto;
+            left: 90%;
+        	}
         }
     }
     &_opened-menu {

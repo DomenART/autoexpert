@@ -12443,6 +12443,38 @@ iframe.uk-cover {
 .header_homepage .header__logo {
   display: none;
 }
+.header_homepage::before {
+  content: '';
+  background: url(img/bg_ng_left.png?7e1a6f12d7f06d452e091c729f84d808) no-repeat;
+  width: 297px;
+  height: 506px;
+  position: absolute;
+  top: -69px;
+  left: 0;
+  z-index: 50;
+}
+@media (max-width: 1850px) {
+  .header_homepage::before {
+    left: auto;
+    right: 90%;
+  }
+}
+.header_homepage::after {
+  content: '';
+  background: url(img/bg_ng_right.png?edd5f16b6cbb5ac033f8eefb07dd95aa) no-repeat;
+  width: 529px;
+  height: 506px;
+  position: absolute;
+  top: -69px;
+  right: -100px;
+  z-index: 50;
+}
+@media (max-width: 1850px) {
+  .header_homepage::after {
+    right: auto;
+    left: 90%;
+  }
+}
 .header_innerpage {
   position: static;
   background-color: #fff;
@@ -12458,6 +12490,38 @@ iframe.uk-cover {
 }
 .header_innerpage .header__phone:hover {
   color: #172e71;
+}
+.header_innerpage::before {
+  content: '';
+  background: url(img/bg_ng_left.png?7e1a6f12d7f06d452e091c729f84d808) no-repeat;
+  width: 297px;
+  height: 506px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 50;
+}
+@media (max-width: 1850px) {
+  .header_innerpage::before {
+    left: auto;
+    right: 90%;
+  }
+}
+.header_innerpage::after {
+  content: '';
+  background: url(img/bg_ng_right.png?edd5f16b6cbb5ac033f8eefb07dd95aa) no-repeat;
+  width: 529px;
+  height: 506px;
+  position: absolute;
+  top: 100%;
+  right: -100px;
+  z-index: 50;
+}
+@media (max-width: 1850px) {
+  .header_innerpage::after {
+    right: auto;
+    left: 90%;
+  }
 }
 .header_opened-menu .header__top {
   background-color: #172e71;
@@ -12620,36 +12684,6 @@ iframe.uk-cover {
   .header__phone {
     margin-right: 15px;
     font-size: 16px;
-  }
-}
-.ng_bg_left {
-  background: url(img/bg_ng_left.png?7e1a6f12d7f06d452e091c729f84d808) no-repeat;
-  width: 297px;
-  height: 506px;
-  position: absolute;
-  top: -69px;
-  left: 0;
-  z-index: 50;
-}
-@media (max-width: 1850px) {
-  .ng_bg_left {
-    left: auto;
-    right: 90%;
-  }
-}
-.ng_bg_right {
-  background: url(img/bg_ng_right.png?edd5f16b6cbb5ac033f8eefb07dd95aa) no-repeat;
-  width: 529px;
-  height: 506px;
-  position: absolute;
-  top: -69px;
-  right: -100px;
-  z-index: 50;
-}
-@media (max-width: 1850px) {
-  .ng_bg_right {
-    right: auto;
-    left: 90%;
   }
 }
 .footer__top {

@@ -47,7 +47,5 @@
 		</div>
 	</div>
 </footer>
-<div class="ng_bg_left"></div>
-<div class="ng_bg_right"></div>
 <?php wp_footer(); ?>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/dist/bundle.js"></script>
