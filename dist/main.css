@@ -12451,7 +12451,7 @@ iframe.uk-cover {
   position: absolute;
   top: -69px;
   left: 0;
-  z-index: 50;
+  z-index: 1;
 }
 @media (max-width: 1850px) {
   .header_homepage::before {
@@ -12467,7 +12467,7 @@ iframe.uk-cover {
   position: absolute;
   top: -69px;
   right: -100px;
-  z-index: 50;
+  z-index: 1;
 }
 @media (max-width: 1850px) {
   .header_homepage::after {
@@ -12476,7 +12476,7 @@ iframe.uk-cover {
   }
 }
 .header_innerpage {
-  position: static;
+  position: relative;
   background-color: #fff;
 }
 .header_innerpage .header__logo {
@@ -12497,9 +12497,9 @@ iframe.uk-cover {
   width: 297px;
   height: 506px;
   position: absolute;
-  top: 100%;
+  top: 11px;
   left: 0;
-  z-index: 50;
+  z-index: 1;
 }
 @media (max-width: 1850px) {
   .header_innerpage::before {
@@ -12513,9 +12513,9 @@ iframe.uk-cover {
   width: 529px;
   height: 506px;
   position: absolute;
-  top: 100%;
+  top: 11px;
   right: -100px;
-  z-index: 50;
+  z-index: 1;
 }
 @media (max-width: 1850px) {
   .header_innerpage::after {
