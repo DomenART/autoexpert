@@ -12445,11 +12445,11 @@ iframe.uk-cover {
 }
 .header_homepage::before {
   content: '';
-  background: url(img/bg_ng_left.png?7e1a6f12d7f06d452e091c729f84d808) no-repeat;
+  background: url(img/bg_ng_left.png?80358ccf5bbb20a9def35c38da04bc67) no-repeat;
   width: 297px;
-  height: 506px;
+  height: 437px;
   position: absolute;
-  top: -69px;
+  top: 0;
   left: 0;
   z-index: 1;
 }
@@ -12461,11 +12461,11 @@ iframe.uk-cover {
 }
 .header_homepage::after {
   content: '';
-  background: url(img/bg_ng_right.png?edd5f16b6cbb5ac033f8eefb07dd95aa) no-repeat;
+  background: url(img/bg_ng_right.png?dd07e80a90eff66d8104ba814b019c80) no-repeat;
   width: 529px;
-  height: 506px;
+  height: 437px;
   position: absolute;
-  top: -69px;
+  top: 0;
   right: -100px;
   z-index: 1;
 }
@@ -12493,11 +12493,11 @@ iframe.uk-cover {
 }
 .header_innerpage::before {
   content: '';
-  background: url(img/bg_ng_left.png?7e1a6f12d7f06d452e091c729f84d808) no-repeat;
+  background: url(img/bg_ng_left.png?80358ccf5bbb20a9def35c38da04bc67) no-repeat;
   width: 297px;
-  height: 506px;
+  height: 437px;
   position: absolute;
-  top: 11px;
+  top: 100%;
   left: 0;
   z-index: 1;
 }
@@ -12509,11 +12509,11 @@ iframe.uk-cover {
 }
 .header_innerpage::after {
   content: '';
-  background: url(img/bg_ng_right.png?edd5f16b6cbb5ac033f8eefb07dd95aa) no-repeat;
+  background: url(img/bg_ng_right.png?dd07e80a90eff66d8104ba814b019c80) no-repeat;
   width: 529px;
-  height: 506px;
+  height: 437px;
   position: absolute;
-  top: 11px;
+  top: 100%;
   right: -100px;
   z-index: 1;
 }
