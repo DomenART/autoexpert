@@ -1,9 +1,11 @@
+import forEach from 'lodash/fp/forEach'
+
 ;(function () {
   let reviews = document.querySelectorAll('.js-spoiler-text')
   let reviewLength = 400
 
   if (reviews) {
-    reviews.forEach(element => {
+    forEach(reviews, element => {
       let reviewText = element.textContent.trim()
       let reviewOpenBtn = element.nextElementSibling
       if (reviewText.length > reviewLength) {

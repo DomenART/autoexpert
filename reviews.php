@@ -17,9 +17,14 @@
             </div>
         </div>
         <div class="uk-container">
+            <?php if (have_posts()) : while ( have_posts() ) : the_post(); ?>
                 <h1 class="reviews__page-title page-title">
                    <?php the_title(); ?>
                 </h1>
+                <?php the_content(); ?>
+            <?php endwhile; else: ?>
+                <p>Извините, ничего не найдено.</p>
+            <?php endif; ?>
             <?php foreach (get_field('review') as $row): ?>
                 <div class="reviews-item">
                     <div class="reviews-item__photo uk-cover-container">

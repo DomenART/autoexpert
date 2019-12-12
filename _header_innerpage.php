@@ -25,11 +25,10 @@
         <div class="uk-container uk-container-large">
         <?php wp_nav_menu(
             array (
-                'menu'=> 'header_menu',
+                'theme_location'=> 'header_menu',
                 'container' => 'nav',
                 'container_class' => 'header__menu',
-                'menu_class' => '',
-                'menu_id' => ''
+                'menu_class' => ''
             )
         ); ?>
         </div>

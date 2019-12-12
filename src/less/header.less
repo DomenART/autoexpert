@@ -82,40 +82,94 @@
 
 .header__menu {
     width: 100%;
-    ul {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        flex-wrap: wrap;
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        li {
-            margin-right: 40px;
-            &:last-of-type {
-                margin-right: 0;
-            }
-        }
-        a {
-            display: block;
-            padding: 32px 0;
-            color: #fff;
-            font-size: 18px;
-            font-weight: 700;
-            line-height: 1;
-            letter-spacing: 0.34px;
-            &:hover {
-                text-decoration: none;
-            }
-        }
-        @media screen and (max-width: @breakpoint-small) {
-            justify-content: flex-start;
-            a {
-                padding: 20px 0;
-            }
-        }
-    }
-   
+}
+
+.header__menu > ul {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0 -20px 0 0;
+	list-style: none;
+	@media (max-width: @breakpoint-small) {
+		margin: 0 -15px;
+	}
+}
+
+.header__menu > ul > li {
+	position: relative;
+	&:last-of-type {
+		margin-right: 0;
+	}
+	&:hover > .sub-menu {
+		display: block;
+	}
+	&:hover > a {
+		background: #172e71;
+	}
+	@media (max-width: @breakpoint-small) {
+		width: 100%;
+	}
+}
+
+.header__menu > ul > li > a {
+	display: block;
+	padding: 32px 20px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: 0.34px;
+	box-sizing: border-box;
+	&:hover {
+		text-decoration: none;
+		background: #172e71;
+	}
+	@media (max-width: @breakpoint-small) {
+		padding: 20px;
+		width: 100%;
+	}
+}
+
+.header__menu .sub-menu {
+	position: absolute;
+	right: 0;
+	top: 100%;
+	background: #172e71;
+	padding: 0;
+	margin: 0;
+	display: none;
+	white-space: nowrap;
+	@media (max-width: @breakpoint-small) {
+		position: relative;
+		top: auto;
+		right: auto;
+		white-space: normal;
+		display: block;
+		background: #11235a;
+	}
+}
+
+.header__menu .sub-menu > li {
+	list-style: none;
+	display: block;
+}
+
+.header__menu .sub-menu > li > a {
+	display: block;
+	padding: 15px 20px;
+	color: #fff;
+	font-size: 14px;
+	line-height: 1;
+	letter-spacing: 0.34px;
+	&:hover {
+		text-decoration: none;
+		background: #11235a;
+		@media (max-width: @breakpoint-small) {
+			background: #172e71;
+		}
+	}
 }
 
 .header__phone {

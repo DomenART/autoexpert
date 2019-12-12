@@ -23,18 +23,17 @@
 		<?php endif; ?>
 		<ul class="home-slider uk-switcher">
 			<?php if (get_field('home_slider')): ?>
-				<?php foreach(get_field('home_slider') as $key => $slide): ?>
-					<?php 
-					if ((in_array(wp_check_filetype($slide['home_slider-item'])['ext'], array('jpg', 'png', 'gif')))):
-					?>
+				<?php foreach(get_field('home_slider') as $slide): ?>
+					<?php if (!empty($slide['image'])): ?>
 						<li class="uk-cover-container">
-							<img src="<?php echo $slide['home_slider-item']; ?>" data-uk-cover alt="">
+							<img src="<?php echo $slide['image']['url']; ?>" data-uk-cover alt="">
 						</li>
-					<?php 
-					elseif (in_array(wp_check_filetype($slide['home_slider-item'])['ext'], array('mp4','ogg','webm'))):
-					?>
+					<?php else: ?>
 						<li class="uk-cover-container js-video-container">
-							<video autoplay loop muted data-uk-cover uk-video="autoplay: inview" src="<?php echo $slide['home_slider-item']; ?>">
+							<video autoplay loop muted data-uk-cover uk-video="autoplay: inview">
+								<?php foreach($slide['videos'] as $video): ?>
+								<source src="<?php echo $video['file']['url'] ?>" type="<?php echo $video['file']['mime_type'] ?>">
+								<?php endforeach; ?>
 							</video>
 						</li>
 					<?php endif; ?>
@@ -46,6 +45,11 @@
 			<?php endif; ?>
 		</ul>
 	</main>
+	<div class="home-warning">
+		<div class="uk-container uk-container-large">
+			В текущий момент происходит обновление баз данных в связи с чем некоторый функционал будет ограничен.
+		</div>
+	</div>
 	<?php get_template_part('_footer'); ?>
 </body>
 </html>
