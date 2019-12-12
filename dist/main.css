@@ -12433,7 +12433,7 @@ iframe.uk-cover {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 4;
+  z-index: 100;
 }
 .header_homepage {
   position: absolute;
@@ -12627,8 +12627,8 @@ iframe.uk-cover {
   height: 506px;
   position: absolute;
   top: -69px;
-  z-index: 50;
   left: 0;
+  z-index: 50;
 }
 @media (max-width: 1850px) {
   .ng_bg_left {
@@ -12642,6 +12642,7 @@ iframe.uk-cover {
   height: 506px;
   position: absolute;
   top: -69px;
+  right: -100px;
   z-index: 50;
 }
 @media (max-width: 1850px) {
