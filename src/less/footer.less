@@ -1,10 +1,15 @@
 .ng_bg_left {
 	background: url("../img/bg_ng_left.png") no-repeat;
-	width: 428px;
-	height: 518px;
+	width: 297px;
+	height: 506px;
 	position: absolute;
-	top: 0px;
-	left: -410px;
+	top: -69px;
+	z-index: 50;
+	left: 0;
+	@media (max-width: 1850px) {
+		left: auto;
+		right: 90%;
+	}
 }
 
 .ng_bg_right {
@@ -12,7 +17,8 @@
 	width: 529px;
 	height: 506px;
 	position: absolute;
-	top: 0;
+	top: -69px;
+	z-index: 50;
 	@media (max-width: 1850px) {
     right: auto;
     left: 90%;
