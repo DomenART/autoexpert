@@ -3,7 +3,7 @@
 <html>
 <?php get_header(); ?>
 <body class="page">
-	<?php get_template_part('_header_homepage'); ?>	
+	<?php get_template_part('_header_homepage'); ?>
 	<main class="home">
 		<!--<div class="home-title">
 			<div class="home-title__decor"></div>
@@ -45,11 +45,11 @@
 			<?php endif; ?>
 		</ul>
 	</main>
-	<div class="home-warning">
+	<!-- <div class="home-warning">
 		<div class="uk-container uk-container-large">
 			В текущий момент происходит обновление баз данных в связи с чем некоторый функционал будет ограничен.
 		</div>
-	</div>
+	</div> -->
 	<?php get_template_part('_footer'); ?>
 </body>
 </html>
