@@ -12434,6 +12434,7 @@ iframe.uk-cover {
   top: 0;
   left: 0;
   z-index: 100;
+  position: relative;
 }
 .header_homepage {
   position: absolute;
